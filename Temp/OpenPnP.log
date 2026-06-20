@@ -1,0 +1,250 @@
+2026-06-20 19:38:49.751 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2026-06-20 19:38:49.752 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2026-06-20 19:38:49.754 AbstractHeadMountable DEBUG: N1.moveTo((228.516000, 302.877000, 0.000000, 0.000000 mm), 1.0)
+2026-06-20 19:38:49.760 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S32
+2026-06-20 19:38:49.760 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1   Z-0.0000   F600 ; move to target
+2026-06-20 19:38:49.760 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:49.761 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:49.832 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:38:49.832 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2026-06-20 19:38:49.832 AbstractHeadMountable DEBUG: DRAG_PIN.moveToSafeZ(1.0)
+2026-06-20 19:38:49.833 ReferencePnpJobProcessor DEBUG: Current rank is 0. Blocked up to rank 10
+2026-06-20 19:38:49.833 ReferencePnpJobProcessor$Plan DEBUG: startLocation (0.000000, 0.000000, 0.000000, 0.000000 mm)
+2026-06-20 19:38:49.833 ReferencePnpJobProcessor$Plan DEBUG: feeders [1_R_8mm]
+2026-06-20 19:38:49.833 ReferencePnpJobProcessor$Plan DEBUG: Placements sorting using NozzleTips completed in 0ms
+2026-06-20 19:38:49.834 ReferencePnpJobProcessor$Plan DEBUG: plannedJobPlacements [R33]
+2026-06-20 19:38:49.834 ReferencePnpJobProcessor$SimplePnpJobPlanner DEBUG: No optimisation possible: R33 rank 0
+2026-06-20 19:38:49.834 ReferencePnpJobProcessor$SimplePnpJobPlanner DEBUG: Planner planned [N2 (J503) -> R33]
+2026-06-20 19:38:49.834 ReferencePnpJobProcessor$Plan DEBUG: Planner complete in 1ms: 1 open, [N2 (J503) -> R33]
+2026-06-20 19:38:49.834 ReferencePnpJobProcessor$Plan DEBUG: Placement N2 (J503) -> R33 has rank 0
+2026-06-20 19:38:49.834 ReferencePnpJobProcessor$Plan DEBUG: Planned placements [N2 (J503) -> R33]
+2026-06-20 19:38:49.834 ReferencePnpJobProcessor$ChangeNozzleTips DEBUG: No nozzle tip change needed for nozzle N2
+2026-06-20 19:38:49.835 AbstractMotionPlanner$SubordinateMotion WARNING: Subordinate Motion queue not empty: (C2:90.000000), drained.
+2026-06-20 19:38:49.835 ReferencePnpJobProcessor$PrerotateAllNozzlesStep DEBUG: All nozzle pre-rotation for pick requested
+2026-06-20 19:38:49.835 ReferenceDragFeeder DEBUG: feed(N2 NOZ18ba22295eb737e4)
+2026-06-20 19:38:49.835 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2026-06-20 19:38:49.835 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2026-06-20 19:38:49.835 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:38:49.835 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2026-06-20 19:38:49.835 AbstractHeadMountable DEBUG: DRAG_PIN.moveToSafeZ(1.0)
+2026-06-20 19:38:49.835 ReferenceDragFeeder DEBUG: visionOffsets (0.129252, 0.244898, 0.000000, 0.000000 mm)
+2026-06-20 19:38:49.835 ReferenceDragFeeder DEBUG: New drag distance with visionOffset (-4.129252, -0.244898, 0.000000, 0.000000 mm)
+2026-06-20 19:38:49.836 AbstractHeadMountable DEBUG: DRAG_PIN.moveTo((34.890748, 53.640102, NaN, NaN mm), 1.0)
+2026-06-20 19:38:49.841 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S2198
+2026-06-20 19:38:49.842 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X79.4627 Y85.6898    F49255 ; move to target
+2026-06-20 19:38:49.843 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:49.843 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y85.5401    F600 ; move to target
+2026-06-20 19:38:49.844 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:49.844 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:50.866 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:79.462748, Y:85.540102, ZN:0.000000, C1:0.000000, C2:0.000000) to (X:79.456000, Y:85.544000, ZN:0.000000, C1:0.000000, C2:0.000000)
+2026-06-20 19:38:50.866 ReferenceActuator DEBUG: DRAG_PIN.actuate(true)
+2026-06-20 19:38:50.867 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M42 P2 S1
+2026-06-20 19:38:50.867 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:50.867 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:50.868 AbstractHeadMountable DEBUG: DRAG_PIN.moveTo((34.890748, 53.640102, 0.000000, 0.000000 mm), 1.0)
+2026-06-20 19:38:50.871 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S178
+2026-06-20 19:38:50.871 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X79.5412 Y85.6898    F600 ; move to target
+2026-06-20 19:38:50.872 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:50.872 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y85.5401    F600 ; move to target
+2026-06-20 19:38:50.872 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:50.872 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:51.159 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:79.462748, Y:85.540102, ZN:0.000000, C1:0.000000, C2:0.000000) to (X:79.456584, Y:85.544000, ZN:0.000000, C1:0.000000, C2:0.000000)
+2026-06-20 19:38:51.159 AbstractHeadMountable DEBUG: DRAG_PIN.moveTo((39.020000, 53.885000, 0.000000, 0.000000 mm), 1.0)
+2026-06-20 19:38:51.162 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S618
+2026-06-20 19:38:51.162 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X83.6704 Y85.9347    F3039 ; move to target
+2026-06-20 19:38:51.163 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:51.163 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y85.7850    F600 ; move to target
+2026-06-20 19:38:51.163 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:51.163 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:51.559 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:83.592000, Y:85.785000, ZN:0.000000, C1:0.000000, C2:0.000000) to (X:83.599584, Y:85.782000, ZN:0.000000, C1:0.000000, C2:0.000000)
+2026-06-20 19:38:51.559 ReferenceActuator DEBUG: R_TAPE.actuate(true)
+2026-06-20 19:38:51.559 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G91 G1 U45 F60000 G90
+2026-06-20 19:38:51.560 ReferenceActuator DEBUG: R_TAPE.actuate(false)
+2026-06-20 19:38:51.560 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G91 G1 U45 F60000 G90
+2026-06-20 19:38:51.560 AbstractHeadMountable DEBUG: DRAG_PIN.moveTo((38.920175, 53.879080, 0.000000, 0.000000 mm), 1.0)
+2026-06-20 19:38:51.564 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S249
+2026-06-20 19:38:51.564 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X83.4922 Y85.9287    F600 ; move to target
+2026-06-20 19:38:51.564 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:51.564 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y85.7791    F600 ; move to target
+2026-06-20 19:38:51.564 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:51.565 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:52.290 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:83.492175, Y:85.779080, ZN:0.000000, C1:0.000000, C2:0.000000) to (X:83.487000, Y:85.782000, ZN:0.000000, C1:0.000000, C2:0.000000)
+2026-06-20 19:38:52.290 ReferenceActuator DEBUG: DRAG_PIN.actuate(false)
+2026-06-20 19:38:52.290 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M42 P2 S0
+2026-06-20 19:38:52.291 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:52.291 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:52.292 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2026-06-20 19:38:52.292 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2026-06-20 19:38:52.292 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:38:52.292 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2026-06-20 19:38:52.292 AbstractHeadMountable DEBUG: DRAG_PIN.moveToSafeZ(1.0)
+2026-06-20 19:38:52.292 ReferenceDragFeeder DEBUG: getVisionOffsets(H1, (25.002000, 50.496000, 14.300000, 90.000000 mm))
+2026-06-20 19:38:52.292 ReferenceDragFeeder DEBUG: Move camera to pick location.
+2026-06-20 19:38:52.292 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2026-06-20 19:38:52.292 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2026-06-20 19:38:52.292 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:38:52.292 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2026-06-20 19:38:52.292 AbstractHeadMountable DEBUG: DRAG_PIN.moveToSafeZ(1.0)
+2026-06-20 19:38:52.292 AbstractHeadMountable DEBUG: Top.moveTo((25.002000, 50.496000, 0.000000, 90.000000 mm), 1.0)
+2026-06-20 19:38:52.297 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S1735
+2026-06-20 19:38:52.297 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X25.0020 Y50.6457    F20644 ; move to target
+2026-06-20 19:38:52.298 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:52.298 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y50.4960    F600 ; move to target
+2026-06-20 19:38:52.298 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:52.298 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:52.928 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:25.002000, Y:50.496000, ZN:0.000000, C1:0.000000, C2:0.000000) to (X:24.999000, Y:50.491000, ZN:0.000000, C1:0.000000, C2:0.000000)
+2026-06-20 19:38:52.928 AbstractHeadMountable DEBUG: Top.moveTo((25.002000, 50.496000, 14.300000, 90.000000 mm), 1.0)
+2026-06-20 19:38:52.931 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S177
+2026-06-20 19:38:52.931 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X25.0804 Y50.6457    F600 ; move to target
+2026-06-20 19:38:52.932 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:52.932 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y50.4960    F600 ; move to target
+2026-06-20 19:38:52.932 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:52.932 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:53.221 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:25.002000, Y:50.496000, ZN:0.000000, C1:0.000000, C2:0.000000) to (X:24.999584, Y:50.491000, ZN:0.000000, C1:0.000000, C2:0.000000)
+2026-06-20 19:38:53.221 ReferenceDragFeeder DEBUG: Perform template match.
+2026-06-20 19:38:53.221 ReferenceActuator DEBUG: TOP_LIGHT.actuate(true)
+2026-06-20 19:38:53.222 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M106 P1 S0.85
+2026-06-20 19:38:53.488 ReferenceActuator DEBUG: TOP_LIGHT.actuate(false)
+2026-06-20 19:38:53.488 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M106 P1 S1
+2026-06-20 19:38:53.496 OpenCvVisionProvider DEBUG: locateTemplateMatches certainty 128244480.000000 at 6.000000, 53.000000
+2026-06-20 19:38:53.501 ReferenceDragFeeder DEBUG: matchX 583.0, matchY 476.0
+2026-06-20 19:38:53.501 ReferenceDragFeeder DEBUG: centered matchX 635.5, matchY 554.0
+2026-06-20 19:38:53.501 ReferenceDragFeeder DEBUG: offsetX 14.5, offsetY -14.0
+2026-06-20 19:38:53.501 ReferenceDragFeeder DEBUG: negated offsetX 14.5, offsetY 14.0
+2026-06-20 19:38:53.501 ReferenceDragFeeder DEBUG: final, in camera units offsetX 0.19727888, offsetY 0.19047616
+2026-06-20 19:38:53.501 ReferenceDragFeeder DEBUG: final visionOffsets (0.197279, 0.190476, 0.000000, 0.000000 mm)
+2026-06-20 19:38:53.501 ReferenceDragFeeder DEBUG: Modified pickLocation (24.804721, 50.305524, 14.300000, 90.000000 mm)
+2026-06-20 19:38:53.502 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2026-06-20 19:38:53.502 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2026-06-20 19:38:53.502 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:38:53.502 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2026-06-20 19:38:53.502 AbstractHeadMountable DEBUG: DRAG_PIN.moveToSafeZ(1.0)
+2026-06-20 19:38:53.502 AbstractHeadMountable DEBUG: N2.moveTo((24.804721, 50.305524, 0.000000, 90.000000 mm), 1.0)
+2026-06-20 19:38:53.505 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S262
+2026-06-20 19:38:53.505 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X11.7511 Y93.7731   B90.0000 F6532 ; move to target
+2026-06-20 19:38:53.506 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:53.506 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y93.6235    F600 ; move to target
+2026-06-20 19:38:53.506 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:53.506 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:54.564 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:11.751108, Y:93.623466, ZN:0.000000, C1:0.000000, C2:90.000000) to (X:11.745000, Y:93.628000, ZN:0.000000, C1:0.000000, C2:90.000000)
+2026-06-20 19:38:54.564 AbstractHeadMountable DEBUG: N2.moveTo((24.804721, 50.305524, 14.300000, 90.000000 mm), 1.0)
+2026-06-20 19:38:54.567 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S304
+2026-06-20 19:38:54.568 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X11.8295 Y93.7731 Z54.7998   F7742 ; move to target
+2026-06-20 19:38:54.568 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:54.568 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y93.6235    F600 ; move to target
+2026-06-20 19:38:54.568 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:54.568 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:55.645 ReferenceNozzle DEBUG: N2.pick()
+2026-06-20 19:38:55.646 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:11.751108, Y:93.623466, ZN:54.799797, C1:0.000000, C2:90.000000) to (X:11.746584, Y:93.628000, ZN:54.731000, C1:0.000000, C2:90.000000)
+2026-06-20 19:38:55.646 ReferenceActuator DEBUG: VAC_PUMP.actuate(true)
+2026-06-20 19:38:55.646 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M42 P3 S1
+2026-06-20 19:38:55.657 ReferenceActuator DEBUG: N2_VAC.actuate(true)
+2026-06-20 19:38:55.657 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M42 P0  S1
+2026-06-20 19:38:55.657 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G4 P1000 ; Delay for given time in [ms]
+2026-06-20 19:38:55.657 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:38:55.658 AbstractMotionPlanner$SubordinateMotion WARNING: Subordinate Motion queue not empty: (C2:0.000000), drained.
+2026-06-20 19:38:55.658 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:55.658 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:56.658 ReferencePnpJobProcessor$PrerotateAllNozzlesStep DEBUG: All nozzle pre-rotation for alignment requested
+2026-06-20 19:38:56.659 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2026-06-20 19:38:56.659 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2026-06-20 19:38:56.659 AbstractHeadMountable DEBUG: N1.moveTo((-0.787416, 50.184000, 0.000000, 0.000000 mm), 1.0)
+2026-06-20 19:38:56.660 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S304
+2026-06-20 19:38:56.660 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1   Z-0.0000   F7736 ; move to target
+2026-06-20 19:38:56.660 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:56.660 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:57.210 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:38:57.210 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2026-06-20 19:38:57.210 AbstractHeadMountable DEBUG: DRAG_PIN.moveToSafeZ(1.0)
+2026-06-20 19:38:57.210 AbstractHeadMountable DEBUG: N2.moveTo((433.932362, 9.990056, 0.000000, 0.000000 mm), 1.0)
+2026-06-20 19:38:57.213 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S2375
+2026-06-20 19:38:57.213 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X420.9287 Y53.3933   B0.0000 F59288 ; move to target
+2026-06-20 19:38:57.213 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:57.213 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y53.2437    F600 ; move to target
+2026-06-20 19:38:57.213 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:57.214 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:58.515 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:420.850304, Y:53.243669, ZN:0.000000, C1:0.000000, C2:0.000000) to (X:420.849584, Y:53.239000, ZN:0.000000, C1:0.000000, C2:0.000000)
+2026-06-20 19:38:58.515 AbstractHeadMountable DEBUG: N2.moveTo((433.932362, 9.990056, 1.000000, 0.000000 mm), 1.0)
+2026-06-20 19:38:58.519 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S123
+2026-06-20 19:38:58.519 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X420.9287 Y53.3933 Z3.2758   F1204 ; move to target
+2026-06-20 19:38:58.519 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:58.519 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y53.2437    F600 ; move to target
+2026-06-20 19:38:58.519 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:58.519 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:59.066 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:420.850304, Y:53.243669, ZN:3.275829, C1:0.000000, C2:0.000000) to (X:420.849584, Y:53.239000, ZN:3.262000, C1:0.000000, C2:0.000000)
+2026-06-20 19:38:59.067 ReferenceActuator DEBUG: BOTTOM_LIGHT.actuate(true)
+2026-06-20 19:38:59.067 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M106 P0 S0.85
+2026-06-20 19:38:59.496 ReferenceBottomVision DEBUG: Alignment result: R0805-1K
+2026-06-20 19:38:59.496 ReferenceBottomVision DEBUG: Bottom vision part R0805-1K result rect { {954.5, 527.0} 85x54 * 0.0 }
+2026-06-20 19:38:59.498 ReferenceBottomVision DEBUG: Alignment result: R0805-1K  |  X:-0.135 Y:0.317 C:-0.000 Δ:0.344
+2026-06-20 19:38:59.499 ReferencePnpJobProcessor$Align DEBUG: Align id R0805-1K, name null, heightUnits Millimeters, height 1.000000, packageId (R0805) with N2 NOZ18ba22295eb737e4, offsets offset ( location: (-0.134859, 0.316966, 0.000000, -0.000000 mm) pre-rotated false)
+2026-06-20 19:38:59.499 ReferenceActuator DEBUG: BOTTOM_LIGHT.actuate(false)
+2026-06-20 19:38:59.500 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M106 P0 S1
+2026-06-20 19:38:59.500 AbstractMotionPlanner$SubordinateMotion WARNING: Subordinate Motion queue not empty: (C2:0.000000), drained.
+2026-06-20 19:38:59.500 ReferencePnpJobProcessor$PrerotateAllNozzlesStep DEBUG: All nozzle pre-rotation for place requested
+2026-06-20 19:38:59.500 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2026-06-20 19:38:59.500 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2026-06-20 19:38:59.500 AbstractHeadMountable DEBUG: N1.moveTo((408.315584, 9.795000, 0.000000, 0.000000 mm), 1.0)
+2026-06-20 19:38:59.503 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S122
+2026-06-20 19:38:59.503 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1   Z-0.0000   F1199 ; move to target
+2026-06-20 19:38:59.503 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:59.503 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:38:59.737 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:420.849584, Y:53.239000, ZN:-0.000000, C1:0.000000, C2:0.000000) to (X:420.849584, Y:53.239000, ZN:0.056000, C1:0.000000, C2:0.000000)
+2026-06-20 19:38:59.737 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:38:59.738 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2026-06-20 19:38:59.738 AbstractHeadMountable DEBUG: DRAG_PIN.moveToSafeZ(1.0)
+2026-06-20 19:38:59.738 AbstractHeadMountable DEBUG: N2.moveTo((132.387359, 153.833034, 0.000000, 0.000000 mm), 1.0)
+2026-06-20 19:38:59.741 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S2847
+2026-06-20 19:38:59.741 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X119.3053 Y197.2363 Z0.0000   F58533 ; move to target
+2026-06-20 19:38:59.741 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:38:59.741 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y197.0866    F600 ; move to target
+2026-06-20 19:38:59.741 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:38:59.741 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:39:00.828 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:119.305301, Y:197.086647, ZN:0.000000, C1:0.000000, C2:0.000000) to (X:119.311000, Y:197.088000, ZN:0.000000, C1:0.000000, C2:0.000000)
+2026-06-20 19:39:00.828 AbstractHeadMountable DEBUG: N2.moveTo((132.387359, 153.833034, 14.500000, 0.000000 mm), 1.0)
+2026-06-20 19:39:00.831 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S305
+2026-06-20 19:39:00.831 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X119.3053 Y197.2363 Z55.9523   F7842 ; move to target
+2026-06-20 19:39:00.832 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:39:00.832 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y197.0866    F600 ; move to target
+2026-06-20 19:39:00.832 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:39:00.832 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:39:01.918 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:119.305301, Y:197.086647, ZN:55.952268, C1:0.000000, C2:0.000000) to (X:119.311000, Y:197.088000, ZN:55.912000, C1:0.000000, C2:0.000000)
+2026-06-20 19:39:01.918 ReferenceNozzle DEBUG: N2.place()
+2026-06-20 19:39:01.918 ReferenceActuator DEBUG: N2_VAC.actuate(false)
+2026-06-20 19:39:01.918 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M42 P0  S0
+2026-06-20 19:39:01.918 ReferenceActuator DEBUG: VAC_PUMP.actuate(false)
+2026-06-20 19:39:01.919 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M42 P3 S0
+2026-06-20 19:39:01.919 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G4 P1000 ; Delay for given time in [ms]
+2026-06-20 19:39:01.919 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:39:01.919 ReferencePnpJobProcessor DEBUG: Current rank is 0. Blocked up to rank 10
+2026-06-20 19:39:01.920 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2026-06-20 19:39:01.920 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2026-06-20 19:39:01.920 AbstractHeadMountable DEBUG: N1.moveTo((106.777000, 153.644000, 0.000000, 0.000000 mm), 1.0)
+2026-06-20 19:39:01.921 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S305
+2026-06-20 19:39:01.921 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1   Z-0.0000   F7839 ; move to target
+2026-06-20 19:39:01.921 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:39:01.921 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:39:03.472 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:39:03.472 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2026-06-20 19:39:03.472 AbstractHeadMountable DEBUG: DRAG_PIN.moveToSafeZ(1.0)
+2026-06-20 19:39:03.472 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2026-06-20 19:39:03.472 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2026-06-20 19:39:03.473 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:39:03.473 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2026-06-20 19:39:03.473 AbstractHeadMountable DEBUG: DRAG_PIN.moveToSafeZ(1.0)
+2026-06-20 19:39:03.473 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2026-06-20 19:39:03.473 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2026-06-20 19:39:03.473 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2026-06-20 19:39:03.473 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2026-06-20 19:39:03.473 AbstractHeadMountable DEBUG: DRAG_PIN.moveToSafeZ(1.0)
+2026-06-20 19:39:03.473 AbstractHeadMountable DEBUG: Top.moveTo((241.047000, 344.314000, NaN, NaN mm), 1.0)
+2026-06-20 19:39:03.477 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S2004
+2026-06-20 19:39:03.478 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1 X241.1254 Y344.4637    F37139 ; move to target
+2026-06-20 19:39:03.478 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M204 S10
+2026-06-20 19:39:03.478 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> G1  Y344.3140    F600 ; move to target
+2026-06-20 19:39:03.479 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M400 ; Wait for moves to complete before returning
+2026-06-20 19:39:03.479 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M114 ; get position
+2026-06-20 19:39:04.333 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:241.047000, Y:344.314000, ZN:-0.000000, C1:0.000000, C2:0.000000) to (X:241.050584, Y:344.320000, ZN:0.000000, C1:0.000000, C2:0.000000)
+2026-06-20 19:39:04.334 ReferencePnpJobProcessor$Finish INFO: Job finished 1 parts in 14.6 sec. This is 246.9 CPH
+2026-06-20 19:39:04.349 ReferenceActuator DEBUG: BOTTOM_LIGHT.actuate(true)
+2026-06-20 19:39:04.349 GcodeAsyncDriver DEBUG: [ZB3245TSS:ttyACM0] commandQueue offer >> M106 P0 S0.85

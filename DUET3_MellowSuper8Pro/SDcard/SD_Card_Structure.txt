@@ -1,0 +1,24 @@
+sd card root/
+├─ filaments/
+├─ firmware/
+│  ├─ WiFiModule_esp*.bin
+├─ gcodes/
+├─ macros/
+├─ sys/
+│  ├─ bed.g
+│  ├─ board.txt $ If required
+│  ├─ config.g
+│  ├─ homeall.g
+│  ├─ homex.g
+│  ├─ homey.g
+│  ├─ homez.g
+│  ├─ pause.g
+│  ├─ resume.g
+│  ├─ sleep.g
+│  ├─ stop.g
+│  ├─ tfree0.g
+│  ├─ tpost0.g
+│  ├─ tpre0.g
+├─ www/
+│  ├─ contents of DuetWebControl-SD.zip
+firmware.bin
