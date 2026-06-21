@@ -1,57 +1,57 @@
-; --- 1. Generelle præferencer ---
-G90                                     ; Absolutte koordinater
-M564 H0 S0                              ; Tillad bevægelse uden homing og software limits
-M550 P"ZB3245TSS"                       ; Maskinens navn
+; --- 1. General Preferences ---
+G90                                     ; Absolute coordinates
+M564 H0 S0                              ; Allow movement without homing and software limits
+M550 P"ZB3245TSS"                       ; Machine name
 M575 P0 B0                              ; Native USB mode
-M595 P60 R60                            ; Buffer til OpenPnP
+M595 P60 R60                            ; Buffer for OpenPnP
 
-; --- 2. Driver-opsætning ---
-M569 P0 S1 T4:4:8:0                     ; X
-M569 P1 S0 T4:4:8:0                     ; Y
-M569 P2 S1 T4:4:8:0                     ; Z
-M569 P3 S1 T4:4:8:0                     ; A
-M569 P4 S1 T4:4:8:0                     ; B
-M569 P5 S1 T4:4:8:0                     ; U
-M569 P6 S1 T4:4:8:0                     ; V
+; --- 2. Driver Setup ---
+M569 P0 S1 T4:4:8:0                     ; X (Positive = Right)
+M569 P1 S1 T4:4:8:0                     ; Y (Positive = Backwards - UPDATED FOR NEW PCB DIR)
+M569 P2 S1 T4:4:8:0                     ; Z (Negative = DOWN towards bed)
+M569 P3 S1 T4:4:8:0                     ; A (Nozzle 1 Rotation)
+M569 P4 S1 T4:4:8:0                     ; B (Nozzle 2 Rotation)
+M569 P5 S1 T4:4:8:0                     ; U (Feeder / Tape Advance)
+M569 P6 S1 T4:4:8:0                     ; V (Extra Axis)
 
-M584 X0 Y1 Z2 A3 B4 U5 V6               ; Akse-mapping
+M584 X0 Y1 Z2 A3 B4 U5 V6               ; Axis mapping
 
-; --- 3. Microstepping & Trin ---
-M350 X16 Y16 Z16 A16 B16 U16 V16 I1     ; Sæt mikrosteps til 16 for alle (RETTET: B tilføjet, W fjernet)
+; --- 3. Microstepping & Steps ---
+M350 X16 Y16 Z16 A16 B16 U16 V16 I1     ; Set microstepping to 16 for all (FIXED: B added, W removed)
 M92 X63.003601 Y62.961800 Z17.7778 A8.8889 B8.8889 U17.7778 V17.7778
 
-; --- 4. Hastigheder, Accel & Strøm (Justeret til sikre startværdier) ---
+; --- 4. Speeds, Accel & Current (Adjusted to safe starting values) ---
 M566 X1200 Y1200 Z1200 A2000 B2000 U1200 V1200
 M203 X30000 Y30000 Z20000 A40000 B40000 U20000 V20000
 M201 X2000 Y2000 Z2000 A5000 B5000 U2000 V2000
 
 ; PIN MAP FOR ZB3245TSS (FLY Super8 Pro H723)
 ;; --- 5. Endstops ---
-M574 X1 S1 P"!^PG12"                    ; X endstop
-M574 Y1 S1 P"!^PG11"                    ; Y endstop
-M574 Z1 S1 P"PG10"                      ; Z endstop
+M574 X1 S1 P"!^PG12"                     ; X endstop
+M574 Y1 S1 P"!^PG11"                     ; Y endstop
+M574 Z1 S1 P"PG10"                       ; Z endstop
 
-; --- 6. I/O Input (Sensorer & Knapper) ---
+; --- 6. I/O Input (Sensors & Buttons) ---
 M950 J0 C"PG9"                          ; DRAG_PIN Safe READ M409 K"sensors.gpIn[0].value"  REGEX .*"result":(?<Value>[01]).*
-M950 J1 C"PD7"                          ; RESTART_KNAP
+M950 J1 C"PD7"                          ; RESTART_BUTTON
 
-; --- 7. Output (Ventiler & Vakuum) ---
+; --- 7. Output (Valves & Vacuum) ---
 M950 P0 C"PB0"                          ; PB0 = N2 Valve  M42 P0 S{True:1}{False:0}
 M950 P1 C"PB1"                          ; PB1 = N1 Valve  M42 P1 S{True:1}{False:0}
 M950 P2 C"PC7"                          ; PC7 = DRAG_PIN Valve  M42 P2 S{True:1}{False:0}
 M950 P3 C"PE5"                          ; PE5 = VAC_PUMP  M42 P3 S{True:1}{False:0}
 M950 P4 C"PF7"                          ; PF7 = BLOW_OFF Valve  M42 P2 S{True:1}{False:0}
 
-; --- 8. Lys & Kamera (PWM 3kHz) ---
-M950 F0 C"PA0" Q3000                    ; TOP_LIGHT  M106 P1 S{True:0.85}{False:1}  invertet 85% = 15%
-M950 F1 C"PA1" Q3000                    ; BOTTOM_LIGHT  M106 P0 S{True:0.85}{False:1}  invertet 85% = 15%
-M106 P0 S1                              ; Start slukket (pga. I1)
-M106 P1 S1                              ; Start slukket (pga. I1)
+; --- 8. Lights & Camera (PWM 3kHz) ---
+M950 F0 C"PA0" Q3000                    ; TOP_LIGHT  M106 P1 S{True:0.85}{False:1}  inverted 85% = 15%
+M950 F1 C"PA1" Q3000                    ; BOTTOM_LIGHT  M106 P0 S{True:0.85}{False:1}  inverted 85% = 15%
+M106 P0 S1                              ; Starts off (due to I1)
+M106 P1 S1                              ; Starts off (due to I1)
 
-; --- 9. Netværk & Load ---
+; --- 9. Network & Load ---
 M552 S1                                 ; Enable Wi-Fi
 M586 P0 S1                              ; HTTP enabled
 M501                                    ; Load saved settings
-; ---- Acuators Tape
+; ---- Actuators Tape
 ; Tape Right G91 G1 V45 F60000 G90
 ; Tape Left G91 G1 U45 F60000 G90
